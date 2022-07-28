@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(254, 229, 229);
+
+}
+
+.container {
+    width: 100%;
+    margin: 2em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.container h1 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* width: 100% */
+}
+
+input {
+    margin: 0.6em 0em 0em;
+    padding: 0.5em;
+    font-size: 16px;
+    border: 0.08em solid black;
+    border-radius: 0.6em;
+    outline: none;
+}
+
+label {
+    font-size: large;
+}
+
+.name,
+.age,
+.gender,
+.phone,
+.email,
+.education,
+.college {
+    border: 0.1em;
+    border-radius: 0.7em;
+    margin: 0.3em 0em;
+    padding: 1em;
+    width: 35%;
+    background-color: white;
+}
+
+#education {
+    margin: 1em 0em 1em 0em;
+}
+
+input#name,
+input#age,
+input#phone,
+input#email,
+input#college {
+    margin: 0.5em 0em 1em 0em;
+
+}
+
+input#other {
+    margin: 0.5em 0em 1em 0em;
+}
+
+input#gender {
+    padding: 0em;
+}
+
+.btn {
+    color: white;
+    background-color: grey;
+    padding: 0.6em 0.8em;
+    margin: 1em 4em 0em 0em;
+    font-size: 1.1em;
+    border: 0.1em solid grey;
+    border-radius: 0.5em;
+    cursor: pointer;
+    width: 5em;
+}
+
+button.reset {
+    border: none;
+    font-weight: bold;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 22em;
+}
+
+button.reset:hover {
+    color: blue;
+}
+
+.foot {
+    text-align: center;
+}
+
+footer {
+    background-color: transparent;
+    opacity: 2;
+    z-index: 0.4;
+    color: black;
+    font-weight: 900;
+    /* text-transform: capitalize; */
+    font-variant: small-caps;
+}
+
+/* ================== For Laptop ================ */
+
+@media screen and (max-width:1024px) {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        margin: 2em auto;
+        width: auto;
+    }
+
+    .btn {
+        float: left;
+        margin: 0.6em 9em 0em 0em;
+    }
+
+
+    button.reset {
+        margin: 1em 1em 0em 2em;
+    }
+
+}
+
+/* =============== For Tablet =================  */
+@media screen and (max-width:768px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 2em auto;
+        width: 100%;
+    }
+
+    div .head {
+        margin: 0em 0em 0em 0em;
+    }
+
+    .head,
+    .education,
+    .email,
+    .name,
+    .phone,
+    .college,
+    .age,
+    .gender {
+        width: 76%;
+    }
+
+    .btn {
+        margin: 0em 2em 0em 0em;
+        padding: 0.3em 0em;
+    }
+
+    button.reset {
+        margin: 0em 1em 0em 1.8em;
+    }
+}
+
+/* ================ For Mobiles ===============  */
+@media screen and (max-width:375px) {
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .head,
+    .name,
+    .age,
+    .college,
+    .phone,
+    .email {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .gender,
+    .education {
+        width: 85%;
+    }
+
+    input#other{
+        margin: 0.54em 0em 0.2em 0em;  
+    }
+
+    label.other{
+        margin: 0em;
+    }
+
+}
